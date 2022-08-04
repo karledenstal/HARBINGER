@@ -5,7 +5,7 @@ A mod that aims to enhance the Companions faction in Skyrim SE. The goal of this
 ## Tweaks
 
 - No more "Hired muscle" radiant quest given by Farkas
-- Both Aela & Farkas can be your shield-sibling in Proving Honor (C01)
+- Both Aela & Farkas can be your shield-sibling in Proving Honor
 - Changes to Radiant quest requirements (values can be changed in MCM)
     - By default 2 quests before Proving Honor
     - By default 5 quests before Silver Hand
@@ -21,6 +21,7 @@ A mod that aims to enhance the Companions faction in Skyrim SE. The goal of this
 
 ## Gameplay changes
 
+- Help requested strongbox contains various raiant quests (Not implemented)
 - Earn daily gold as Harbinger, collect from strongbox in Jorrvaskr (Not implemented)
 - Companions influence quests (Not implemented)
     - Windhelm (???)
@@ -37,13 +38,3 @@ A mod that aims to enhance the Companions faction in Skyrim SE. The goal of this
         - Allows you to send Companion sentry to Windhelm
 - Use earned gold to turn Jorrvaskr into a proper Mead hall (Not implemented, future plan)
 - Use earned gold to create smaller outposts in hold capitals (Not implemented, future plan)
-
-## New Radiant Quests
-
-New radiant quests are added to give more of diversity to the faction. Since we removed Hired Muscle, we need to assign a new one to Farkas, and Aela should have more than just Animal extermination stuff.
-
-### Farkas
-- Hai
-
-### Aela
-- Hai
