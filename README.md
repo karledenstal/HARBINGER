@@ -15,10 +15,10 @@ A mod that aims to enhance the Companions faction in Skyrim SE. The goal of this
 - [x] Allows you to set a minimum player level to meet before each story quest
     - By default set to min level 1 for every story quest
 - [x] Radiant questgiver won't stand around waiting all day for you
+- [x] Weekly gold reward as Harbinger (collect from Harbingers Ledger in Jorrvaskr)
 
 ## Future plans (No ETA)
 
-- Earn daily gold as Harbinger
 - Manage Companions from Harbingers Ledger
     - Collect Harbinger earnings
     - Assign Companion sentry
