@@ -95,5 +95,11 @@ Event OnOptionHighlight(int a_option)
         SetInfoText("Will start The Silver Hand once this number of radiant quests have been completed.")
     elseif (a_option == HarbingerReqUntilC04_OID)
         SetInfoText("Will start Blood's Honor once this number of radiant quests have been completed.")
+    elseif (a_option == HarbingerMinLevelC01_OID)
+        SetInfoText("Minimum player level required to start Proving Honor.")
+    elseif (a_option == HarbingerMinLevelC03_OID)
+        SetInfoText("Minimum player level required to start The Silver Hand.")
+    elseif (a_option == HarbingerMinLevelC04_OID)
+        SetInfoText("Minimum player level required to start Blood's Honor.")
     endif
 EndEvent
