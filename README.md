@@ -10,6 +10,7 @@ A mod that aims to enhance the Companions faction in Skyrim SE. The goal of this
     - By default 2 quests before Proving Honor
     - By default 5 quests before Silver Hand
     - By default 3 quests before Blood's Honor
+- Restores Aelas Animal pelt radiant quest (Not implemented)
 - Tell Aela the Giant was dead before you even got there
 - Allows you to set a minimum player level to meet before each story quest (not implemented)
 - Allows you to take more than one radiant quest at a time (Not implemented, maybe not possible)
@@ -41,7 +42,7 @@ A mod that aims to enhance the Companions faction in Skyrim SE. The goal of this
 
 ## New Radiant Quests
 
-New radiant quests are added to give a little bit more of diversity to the game. Since we removed Hired Muscle, we need to assign a new one to Farkas, and Aela should have more than just Animal extermination stuff.
+New radiant quests are added to give more of diversity to the faction. Since we removed Hired Muscle, we need to assign a new one to Farkas, and Aela should have more than just Animal extermination stuff.
 
 ### Farkas
 - Hai
