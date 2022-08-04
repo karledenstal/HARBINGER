@@ -15,11 +15,11 @@ A mod that aims to enhance the Companions faction in Skyrim SE. The goal of this
 - [x] Allows you to set a minimum player level to meet before each story quest
     - By default set to min level 1 for every story quest
 - [x] Radiant questgiver won't stand around waiting all day for you
-- [ ] Better radiant quest rewards.
 - [ ] Earn daily gold as Harbinger, collect from strongbox in Jorrvaskr (Not implemented)
 
 ## Future plans
 
+- Leveled radiant quest rewards
 - Help requested strongbox contains various raiant quests
 - Companions influence quests
     - Windhelm (???)
