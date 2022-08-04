@@ -1,0 +1,1 @@
+Scriptname HarbingerEarningsEffect extends activemagiceffect  
