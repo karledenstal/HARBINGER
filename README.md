@@ -24,16 +24,16 @@ A mod that aims to enhance the Companions faction in Skyrim SE. The goal of this
 - Help requested strongbox contains various raiant quests
 - Companions influence quests
     - Windhelm (???)
-        - Gold reward
+        - Reward: Gold + Amulet of Ysgramor
         - Allows you to send Companion sentry to Windhelm
     - Riften (Mjoll)
-         - Gold reward
+        - Reward: Gold + ???
         - Allows you to send Companion sentry to Windhelm
     - Solitude (???)
-        - Gold reward
+        - Reward: Gold + ???
         - Allows you to send Companion sentry to Windhelm
     - Markarth (???)
-        - Gold reward
+        - Reward: Gold + ???
         - Allows you to send Companion sentry to Windhelm
 - Use earned gold to turn Jorrvaskr into a proper Mead hall
 - Use earned gold to create smaller outposts in hold capitals

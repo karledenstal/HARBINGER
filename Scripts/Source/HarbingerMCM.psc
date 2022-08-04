@@ -4,9 +4,9 @@ GlobalVariable Property HarbingerReqUntilC01 Auto
 GlobalVariable Property HarbingerReqUntilC03 Auto
 GlobalVariable Property HarbingerReqUntilC04 Auto
 
-GlobalVariable Property HarbingerMinLevelC01 Auto;
-GlobalVariable Property HarbingerMinLevelC03 Auto;
-GlobalVariable Property HarbingerMinLevelC04 Auto;
+GlobalVariable Property HarbingerMinLevelC01 Auto
+GlobalVariable Property HarbingerMinLevelC03 Auto
+GlobalVariable Property HarbingerMinLevelC04 Auto
 
 Int HarbingerReqUntilC01_OID
 Int HarbingerReqUntilC03_OID
