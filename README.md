@@ -2,7 +2,7 @@
 
 A mod that aims to enhance the Companions faction in Skyrim SE. The goal of this mod is to remain true to vanilla and make tweaks and add gameplay elements to make the faction questline nicer to progress through.
 
-## Tweaks
+## Current implementation
 
 - No more "Hired muscle" radiant quest given by Farkas
 - Both Aela & Farkas can be your shield-sibling in Proving Honor
@@ -19,7 +19,7 @@ A mod that aims to enhance the Companions faction in Skyrim SE. The goal of this
 - Better radiant quest rewards. (Not implemented)
     - Set base gold reward for Radiant quests
 
-## Gameplay changes
+## Future plans
 
 - Help requested strongbox contains various raiant quests (Not implemented)
 - Earn daily gold as Harbinger, collect from strongbox in Jorrvaskr (Not implemented)
