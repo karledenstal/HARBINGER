@@ -6,7 +6,7 @@ A mod that aims to enhance the Companions faction in Skyrim SE. The goal of this
 
 - No more "Hired muscle" radiant quest given by Farkas
 - Both Aela & Farkas can be your shield-sibling in Proving Honor (C01)
-- Changes to Radiant quest requirments (values can be changed in MCM)
+- Changes to Radiant quest requirements (values can be changed in MCM)
     - By default 2 quests before Proving Honor
     - By default 5 quests before Silver Hand
     - By default 3 quests before Blood's Honor
