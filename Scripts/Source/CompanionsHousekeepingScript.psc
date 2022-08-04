@@ -215,6 +215,9 @@ CompanionsRadiantQuest property CR14 auto ; let a newbie in
 
 CompanionsStoryQuest property CurrentStoryQuest auto
 
+; Harbinger Favorite Quest Giver
+GlobalVariable Property HarbingerFavoriteQuestgiver auto conditional
+
 int property FavoriteQuestgiver auto conditional
 	; 0 --> None (default behavior defined in quest)
 	; 1 --> Aela
@@ -1009,26 +1012,46 @@ int function CompleteRadiantQuest(CompanionsRadiantQuest rq)
 	endif
 
 	CycleRadiantQuests()
+
+    ; HARBINGER favorite questgiver
+    HarbingerFavoriteQuestgiver.SetValue(0)
+    FavoriteQuestgiver = 0
+    int fqgCount = 0
+
+    if (AelaQuests > FarkasQuests && AelaQuests > VilkasQuests && AelaQuests > SkjorQuests)
+        HarbingerFavoriteQuestgiver.SetValue(1)
+        fqgCount = AelaQuests
+    elseif (FarkasQuests > AelaQuests && FarkasQuests > VilkasQuests && FarkasQuests > SkjorQuests)
+        HarbingerFavoriteQuestgiver.SetValue(2)
+        fqgCount = FarkasQuests
+    elseif (VilkasQuests > AelaQuests && VilkasQuests > FarkasQuests && VilkasQuests > SkjorQuests)
+        HarbingerFavoriteQuestgiver.SetValue(3)
+        fqgCount = VilkasQuests
+    elseif (SkjorQuests > AelaQuests && SkjorQuests > FarkasQuests && SkjorQuests > VilkasQuests)
+        HarbingerFavoriteQuestgiver.SetValue(4)
+        fqgCount = VilkasQuests
+    endif
+
 		
 	; update favorite questgiver
-	FavoriteQuestgiver = 0
-	int fqgCount = 0
-	if (AelaQuests > fqgCount)
-		FavoriteQuestgiver = 1
-		fqgCount = AelaQuests
-	endif
-	if (FarkasQuests > fqgCount)
-		FavoriteQuestgiver = 2
-		fqgCount = FarkasQuests
-	endif
-	if (VilkasQuests > fqgCount)
-		FavoriteQuestgiver = 3
-		fqgCount = VilkasQuests
-	endif
-	if (SkjorQuests > fqgCount)
-		FavoriteQuestgiver = 4
-		fqgCount = SkjorQuests
-	endif
+	; FavoriteQuestgiver = 0
+	; int fqgCount = 0
+	; if (AelaQuests > fqgCount)
+	; 	FavoriteQuestgiver = 1
+	; 	fqgCount = AelaQuests
+	; endif
+	; if (FarkasQuests > fqgCount)
+	; 	FavoriteQuestgiver = 2
+	; 	fqgCount = FarkasQuests
+	; endif
+	; if (VilkasQuests > fqgCount)
+	; 	FavoriteQuestgiver = 3
+	; 	fqgCount = VilkasQuests
+	; endif
+	; if (SkjorQuests > fqgCount)
+	; 	FavoriteQuestgiver = 4
+	; 	fqgCount = SkjorQuests
+	; endif
 	
 	; check to see if it's time to start the next story quest
 	bool startedStory = False
@@ -1046,7 +1069,7 @@ int function CompleteRadiantQuest(CompanionsRadiantQuest rq)
 		endif
 	elseif (C04.GetStage() < 1)
 		; count, also min level
-		if ( (RadiantQuestsDoneInCurrentSegment >= HarbingerReqUntilC04.Value) && (Game.GetPlayer().GetLevel() >= C04MinLevel) ) ; use HARBINGER value
+		if ( (RadiantQuestsDoneInCurrentSegment >= HarbingerReqUntilC04.Value) && (Game.GetPlayer().GetLevel() >= C04MinLevel) )
 			StartStoryQuest(C04)
 			startedStory = True
 		endif
@@ -1071,13 +1094,13 @@ endFunction
 
 Actor function GetFavoriteQuestgiver()
 	; Shane wants arrays.
-	if     (FavoriteQuestgiver == 1)
+	if     (HarbingerFavoriteQuestgiver.Value == 1)
 		return Aela.GetActorReference()
-	elseif (FavoriteQuestgiver == 2)
+	elseif (HarbingerFavoriteQuestgiver.Value == 2)
 		return Farkas.GetActorReference()
-	elseif (FavoriteQuestgiver == 3)
+	elseif (HarbingerFavoriteQuestgiver.Value == 3)
 		return Vilkas.GetActorReference()
-	elseif (FavoriteQuestgiver == 4)
+	elseif (HarbingerFavoriteQuestgiver.Value == 4)
 		return Skjor.GetActorReference()
 	endif
 	

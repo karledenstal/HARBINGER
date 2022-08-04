@@ -4,6 +4,8 @@ GlobalVariable Property HarbingerReqUntilC01 Auto
 GlobalVariable Property HarbingerReqUntilC03 Auto
 GlobalVariable Property HarbingerReqUntilC04 Auto
 
+GlobalVariable Property HarbingerFavoriteQuestgiver Auto Conditional
+
 Int HarbingerReqUntilC01_OID
 Int HarbingerReqUntilC03_OID
 Int HarbingerReqUntilC04_OID
@@ -18,6 +20,8 @@ event OnPageReset(string a_page)
     HarbingerReqUntilC01_OID = AddSliderOption("Proving Honor",HarbingerReqUntilC01.GetValue(),"{0}")
     HarbingerReqUntilC03_OID = AddSliderOption("The Silver Hand",HarbingerReqUntilC03.GetValue(),"{0}")
     HarbingerReqUntilC04_OID = AddSliderOption("Blood's Honor",HarbingerReqUntilC04.GetValue(),"{0}")
+    AddEmptyOption()
+    AddTextOption("Current favorite quest giver", HarbingerFavoriteQuestgiver.GetValue())
 endEvent
 
 Event OnOptionSliderOpen(int a_option)
