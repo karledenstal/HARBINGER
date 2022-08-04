@@ -8,6 +8,8 @@ GlobalVariable Property HarbingerMinLevelC01 Auto
 GlobalVariable Property HarbingerMinLevelC03 Auto
 GlobalVariable Property HarbingerMinLevelC04 Auto
 
+GlobalVariable Property HarbingerCurrentEarnings Auto
+
 Int HarbingerReqUntilC01_OID
 Int HarbingerReqUntilC03_OID
 Int HarbingerReqUntilC04_OID
@@ -30,6 +32,9 @@ event OnPageReset(string a_page)
     HarbingerMinLevelC01_OID = AddSliderOption("Proving Honor",HarbingerMinLevelC01.GetValue(),"{0}")
     HarbingerMinLevelC03_OID = AddSliderOption("The Silver Hand",HarbingerMinLevelC03.GetValue(),"{0}")
     HarbingerMinLevelC04_OID = AddSliderOption("Blood's Honor",HarbingerMinLevelC04.GetValue(),"{0}")
+    AddEmptyOption()
+    AddHeaderOption("Debug")
+    AddTextOption("Harbinger earnings", HarbingerCurrentEarnings.GetValue())
 endEvent
 
 Event OnOptionSliderOpen(int a_option)
