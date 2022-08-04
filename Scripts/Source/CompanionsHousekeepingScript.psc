@@ -216,7 +216,7 @@ CompanionsRadiantQuest property CR14 auto ; let a newbie in
 CompanionsStoryQuest property CurrentStoryQuest auto
 
 ; Harbinger Favorite Quest Giver
-GlobalVariable Property HarbingerFavoriteQuestgiver auto conditional
+; GlobalVariable Property HarbingerFavoriteQuestgiver auto conditional
 
 int property FavoriteQuestgiver auto conditional
 	; 0 --> None (default behavior defined in quest)
@@ -1012,30 +1012,8 @@ int function CompleteRadiantQuest(CompanionsRadiantQuest rq)
 	endif
 
 	CycleRadiantQuests()
-
-    ; HARBINGER favorite questgiver
-    HarbingerFavoriteQuestgiver.SetValue(0)
-    FavoriteQuestgiver = 0
-    int fqgCount = 0
-
-    if (AelaQuests > FarkasQuests && AelaQuests > VilkasQuests && AelaQuests > SkjorQuests)
-        HarbingerFavoriteQuestgiver.SetValue(1)
-        fqgCount = AelaQuests
-    elseif (FarkasQuests > AelaQuests && FarkasQuests > VilkasQuests && FarkasQuests > SkjorQuests)
-        HarbingerFavoriteQuestgiver.SetValue(2)
-        fqgCount = FarkasQuests
-    elseif (VilkasQuests > AelaQuests && VilkasQuests > FarkasQuests && VilkasQuests > SkjorQuests)
-        HarbingerFavoriteQuestgiver.SetValue(3)
-        fqgCount = VilkasQuests
-    elseif (SkjorQuests > AelaQuests && SkjorQuests > FarkasQuests && SkjorQuests > VilkasQuests)
-        HarbingerFavoriteQuestgiver.SetValue(4)
-        fqgCount = VilkasQuests
-    endif
-
-		
+	
 	; update favorite questgiver
-    ; Code is replaced by HARBINGER
-    ; But leaving it in because who knows what could break??
 	FavoriteQuestgiver = 0
 	int fqgCount = 0
 	if (AelaQuests > fqgCount)
@@ -1096,13 +1074,13 @@ endFunction
 
 Actor function GetFavoriteQuestgiver()
 	; Shane wants arrays.
-	if     (HarbingerFavoriteQuestgiver.Value == 1)
+	if     (FavoriteQuestgiver == 1)
 		return Aela.GetActorReference()
-	elseif (HarbingerFavoriteQuestgiver.Value == 2)
+	elseif (FavoriteQuestgiver == 2)
 		return Farkas.GetActorReference()
-	elseif (HarbingerFavoriteQuestgiver.Value == 3)
+	elseif (FavoriteQuestgiver == 3)
 		return Vilkas.GetActorReference()
-	elseif (HarbingerFavoriteQuestgiver.Value == 4)
+	elseif (FavoriteQuestgiver == 4)
 		return Skjor.GetActorReference()
 	endif
 	
