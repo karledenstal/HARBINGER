@@ -10,11 +10,31 @@ A mod that aims to enhance the Companions faction in Skyrim SE. The goal of this
     - By default 2 quests before Proving Honor
     - By default 5 quests before Silver Hand
     - By default 3 quests before Blood's Honor
-- Allows you to take more than one radiant quest at a time (Not implemented)
+- Allows you to set a minimum player level to meet before each story quest (not implemented)
+- Allows you to take more than one radiant quest at a time (Not implemented, maybe not possible)
 - Better radiant quest rewards. (Not implemented)
 
 ## Gameplay changes
 
-- Missives styled notice board in Jorrvaskr to let you pick up radiant quests (Not implemented)
-- Reputation needs to be earned in order to progress (Not implemented)
+- Missives styled notice board in Jorrvaskr to let you pick up radiant quests (Not implemented, maybe not possible)
 - More radiant quests added (Not implemented)
+
+## Harbinger endgame
+
+- Companions influence quests (Not implemented)
+    - Windhelm (???)
+    - Riften (Mjoll)
+    - Solitude (???)
+    - Markarth (???)
+- Earn daily gold to collect in Jorrvaskr (Not implemented)
+- Companions Sentries in each hold (Not implemented)
+
+## New Radiant Quests
+
+New radiant quests are added to give a little bit more of diversity to the game. Since we removed Hired Muscle, we need to assign a new one to Farkas, and Aela should have more than just Animal extermination stuff.
+
+### Farkas
+- Hai
+
+### Aela
+- Hai
