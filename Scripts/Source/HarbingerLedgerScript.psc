@@ -7,13 +7,12 @@ Message Property HarbingerLedgerMessage auto
 GlobalVariable Property HarbingerCurrentEarnings auto
 
 Event OnActivate(ObjectReference akActionRef)
-    LedgerMenu()
     ; Check that player is Hrabinger to open the menu.
-    ; if (Game.GetPlayer().IsInFaction(HarbingerFaction))
-    ;     LedgerMenu()
-    ; else
-    ;     Debug.Notification("This doesn't belong to you.")
-    ; endif
+    if (Game.GetPlayer().IsInFaction(HarbingerFaction))
+        LedgerMenu()
+    else
+        Debug.Notification("This doesn't belong to you.")
+    endif
 EndEvent
 
 Function LedgerMenu(int aButton = 0)
