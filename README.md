@@ -21,8 +21,8 @@ A mod that aims to enhance the Companions faction in Skyrim SE. The goal of this
 
 ## Future plans
 
-- Help requested strongbox contains various raiant quests (Not implemented)
-- Companions influence quests (Not implemented)
+- Help requested strongbox contains various raiant quests
+- Companions influence quests
     - Windhelm (???)
         - Gold reward
         - Allows you to send Companion sentry to Windhelm
@@ -35,5 +35,5 @@ A mod that aims to enhance the Companions faction in Skyrim SE. The goal of this
     - Markarth (???)
         - Gold reward
         - Allows you to send Companion sentry to Windhelm
-- Use earned gold to turn Jorrvaskr into a proper Mead hall (Not implemented, future plan)
-- Use earned gold to create smaller outposts in hold capitals (Not implemented, future plan)
+- Use earned gold to turn Jorrvaskr into a proper Mead hall
+- Use earned gold to create smaller outposts in hold capitals
