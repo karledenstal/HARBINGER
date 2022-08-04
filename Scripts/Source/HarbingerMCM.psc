@@ -21,7 +21,7 @@ event OnPageReset(string a_page)
     HarbingerReqUntilC03_OID = AddSliderOption("The Silver Hand",HarbingerReqUntilC03.GetValue(),"{0}")
     HarbingerReqUntilC04_OID = AddSliderOption("Blood's Honor",HarbingerReqUntilC04.GetValue(),"{0}")
     AddEmptyOption()
-    AddTextOption("Current favorite quest giver", HarbingerFavoriteQuestgiver.GetValue())
+    GetCurrentFavQuestGiver()
 endEvent
 
 Event OnOptionSliderOpen(int a_option)
@@ -65,3 +65,17 @@ Event OnOptionHighlight(int a_option)
         SetInfoText("Will start Blood's Honor once this number of radiant quests have been completed.")
     endif
 EndEvent
+
+Function GetCurrentFavQuestGiver()
+    if (HarbingerFavoriteQuestgiver.GetValue() == 1)
+        AddTextOption("FQG (Debug)", "Aela the Huntress")
+    elseif (HarbingerFavoriteQuestgiver.GetValue() == 2)
+        AddTextOption("FQG (Debug)", "Farkas")
+    elseif (HarbingerFavoriteQuestgiver.GetValue() == 3)
+        AddTextOption("FQG (Debug)", "Vilkas")
+    elseif (HarbingerFavoriteQuestgiver.GetValue() == 4)
+        AddTextOption("FQG (Debug)", "Skjor")
+    elseif (HarbingerFavoriteQuestgiver.GetValue() == 0)
+        AddTextOption("FQG (Debug)", "None")
+    endif
+EndFunction

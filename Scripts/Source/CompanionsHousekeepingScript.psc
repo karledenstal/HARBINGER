@@ -1034,24 +1034,26 @@ int function CompleteRadiantQuest(CompanionsRadiantQuest rq)
 
 		
 	; update favorite questgiver
-	; FavoriteQuestgiver = 0
-	; int fqgCount = 0
-	; if (AelaQuests > fqgCount)
-	; 	FavoriteQuestgiver = 1
-	; 	fqgCount = AelaQuests
-	; endif
-	; if (FarkasQuests > fqgCount)
-	; 	FavoriteQuestgiver = 2
-	; 	fqgCount = FarkasQuests
-	; endif
-	; if (VilkasQuests > fqgCount)
-	; 	FavoriteQuestgiver = 3
-	; 	fqgCount = VilkasQuests
-	; endif
-	; if (SkjorQuests > fqgCount)
-	; 	FavoriteQuestgiver = 4
-	; 	fqgCount = SkjorQuests
-	; endif
+    ; Code is replaced by HARBINGER
+    ; But leaving it in because who knows what could break??
+	FavoriteQuestgiver = 0
+	int fqgCount = 0
+	if (AelaQuests > fqgCount)
+		FavoriteQuestgiver = 1
+		fqgCount = AelaQuests
+	endif
+	if (FarkasQuests > fqgCount)
+		FavoriteQuestgiver = 2
+		fqgCount = FarkasQuests
+	endif
+	if (VilkasQuests > fqgCount)
+		FavoriteQuestgiver = 3
+		fqgCount = VilkasQuests
+	endif
+	if (SkjorQuests > fqgCount)
+		FavoriteQuestgiver = 4
+		fqgCount = SkjorQuests
+	endif
 	
 	; check to see if it's time to start the next story quest
 	bool startedStory = False

@@ -59,6 +59,8 @@ Function Init()
 	Actor selectedObserver = (CentralQuest as CompanionsHousekeepingScript).GetFavoriteQuestgiver()
 	
 	; it's always Farkas now
+    ; HARBINGER: Comment out forced Farkas in order to let it be Aela & Farkas
+    ; Vilkas & Skjor can technically be selected, but don't have correct files for it.
 	; selectedObserver = (CentralQuest as CompanionsHousekeepingScript).Farkas.GetActorReference()
 
 	Observer.ForceRefTo(selectedObserver)
