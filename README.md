@@ -16,6 +16,7 @@ A mod that aims to enhance the Companions faction in Skyrim SE. The goal of this
     - By default set to lvl 1 for Proving Honor
     - By default set to lvl 5 for Silver Hand
     - By default set to lvl 10 for Blood's Honor
+- Radiant questgiver won't stand around waiting all day for you
 - Better radiant quest rewards. (Not implemented)
     - Set base gold reward for Radiant quests
 - Earn daily gold as Harbinger, collect from strongbox in Jorrvaskr (Not implemented)
