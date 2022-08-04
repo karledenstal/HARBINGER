@@ -22,7 +22,7 @@ A mod that aims to enhance the Companions faction in Skyrim SE. The goal of this
 
 ## Harbinger endgame
 
-- Earn daily gold to collect in Jorrvaskr (Not implemented)
+- Earn daily gold as Harbinger, collect from strongbox in Jorrvaskr (Not implemented)
 - Companions influence quests (Not implemented)
     - Windhelm (???)
         - Gold reward
@@ -36,6 +36,8 @@ A mod that aims to enhance the Companions faction in Skyrim SE. The goal of this
     - Markarth (???)
         - Gold reward
         - Allows you to send Companion sentry to Windhelm
+- Use earned gold to turn Jorrvaskr into a proper Mead hall (Not implemented, future plan)
+- Use earned gold to create smaller outposts in hold capitals (Not implemented, future plan)
 
 ## New Radiant Quests
 
