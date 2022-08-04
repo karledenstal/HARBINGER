@@ -19,7 +19,6 @@ A mod that aims to enhance the Companions faction in Skyrim SE. The goal of this
 
 ## Future plans
 
-- Leveled radiant quest rewards
 - Help requested strongbox contains various raiant quests
 - Companions influence quests
     - Windhelm (???)
