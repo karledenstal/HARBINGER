@@ -13,6 +13,9 @@ A mod that aims to enhance the Companions faction in Skyrim SE. The goal of this
 - Restores Aelas Animal pelt radiant quest
 - Tell Aela the Giant was dead before you even got there
 - Allows you to set a minimum player level to meet before each story quest (not implemented)
+    - By default set to lvl 1 for Proving Honor
+    - By default set to lvl 5 for Silver Hand
+    - By default set to lvl 10 for Blood's Honor
 - Allows you to take more than one radiant quest at a time (Not implemented, maybe not possible)
 - Better radiant quest rewards. (Not implemented)
 

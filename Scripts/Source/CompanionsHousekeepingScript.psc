@@ -134,6 +134,11 @@ int property RadiantQuestsDoneInCurrentSegment auto conditional
 ReferenceAlias property RadiantQuestgiver auto
 Faction Property CurrentFollowerFaction auto
 
+;; HARBINGER Min Level Alters
+GlobalVariable Property HarbingerMinLevelC01 auto;
+GlobalVariable Property HarbingerMinLevelC03 auto;
+GlobalVariable Property HarbingerMinLevelC04 auto;
+
 int Property C04MinLevel auto ; because there are Hagravens involved
 
 CompanionsRadiantQuest Property AelaCurrentQuest auto
@@ -1037,19 +1042,19 @@ int function CompleteRadiantQuest(CompanionsRadiantQuest rq)
 	bool startedStory = False
 	if     (C01.GetStage() < 1)
 		; count
-		if (RadiantQuestsDoneInCurrentSegment >= HarbingerReqUntilC01.Value) ; use HARBINGER value
+		if (RadiantQuestsDoneInCurrentSegment >= HarbingerReqUntilC01.Value && (Game.GetPlayer().GetLevel() >= HarbingerMinLevelC01.Value)) ; use HARBINGER value
 			StartStoryQuest(C01)
 			startedStory = True
 		endif
 	elseif (C03.GetStage() < 1)
 		; count
-		if (RadiantQuestsDoneInCurrentSegment >= HarbingerReqUntilC03.Value) ; use HARBINGER value
+		if (RadiantQuestsDoneInCurrentSegment >= HarbingerReqUntilC03.Value && (Game.GetPlayer().GetLevel() >= HarbingerMinLevelC03.Value)) ; use HARBINGER value
 			StartStoryQuest(C03)
 			startedStory = True
 		endif
 	elseif (C04.GetStage() < 1)
 		; count, also min level
-		if ( (RadiantQuestsDoneInCurrentSegment >= HarbingerReqUntilC04.Value) && (Game.GetPlayer().GetLevel() >= C04MinLevel) )
+		if ( (RadiantQuestsDoneInCurrentSegment >= HarbingerReqUntilC04.Value) && (Game.GetPlayer().GetLevel() >= HarbingerMinLevelC04.Value) )
 			StartStoryQuest(C04)
 			startedStory = True
 		endif
