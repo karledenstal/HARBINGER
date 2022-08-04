@@ -22,13 +22,20 @@ A mod that aims to enhance the Companions faction in Skyrim SE. The goal of this
 
 ## Harbinger endgame
 
+- Earn daily gold to collect in Jorrvaskr (Not implemented)
 - Companions influence quests (Not implemented)
     - Windhelm (???)
+        - Gold reward
+        - Allows you to send Companion sentry to Windhelm
     - Riften (Mjoll)
+         - Gold reward
+        - Allows you to send Companion sentry to Windhelm
     - Solitude (???)
+        - Gold reward
+        - Allows you to send Companion sentry to Windhelm
     - Markarth (???)
-- Earn daily gold to collect in Jorrvaskr (Not implemented)
-- Companions Sentries in each hold (Not implemented)
+        - Gold reward
+        - Allows you to send Companion sentry to Windhelm
 
 ## New Radiant Quests
 
