@@ -21,11 +21,6 @@ A mod that aims to enhance the Companions faction in Skyrim SE. The goal of this
 
 ## Gameplay changes
 
-- Missives styled notice board in Jorrvaskr to let you pick up radiant quests (Not implemented, maybe not possible)
-- More radiant quests added (Not implemented)
-
-## Harbinger endgame
-
 - Earn daily gold as Harbinger, collect from strongbox in Jorrvaskr (Not implemented)
 - Companions influence quests (Not implemented)
     - Windhelm (???)
